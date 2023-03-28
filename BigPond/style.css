@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0rem;
+    color: white;
+}
+
+nav .logo {
+    width: 20%;
+}
+
+nav .logo img {
+    padding-top: 0px;
+    width: 70px;
+}
+
+nav .links {
+    list-style-type: none;
+    display: flex;
+}
+
+nav .links li a {
+    color:coral;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+img {
+    z-index: -9999;
+    width: 100%;
+    position: fixed;
+}
+.texts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-top: 1rem;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+}
+
+.btn {
+    padding: 18px 34px;
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    background-color: coral;
+    color: white;
+    text-align: center;
+}
+
+a {
+    color: chocolate;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.cards {
+    border: 2px;
+    border-radius: 50%;
+    float: right;
+    width: 50%;
+}
+
+.cards .kotak img {
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+
+@media screen and (max-width:768px) {
+    nav {
+        flex-direction: initial;
+        margin: 0rem;
+    }
+
+    nav .logo {
+        margin-top: 2rem;
+        text-align: left;
+        width: 100%;
+    }
+
+    nav ul {
+        padding-inline-start: 0;
+        margin: 3rem;
+    }
+
+    .wrapper {
+        max-width: 100% !important;
+        margin-top: auto;
+    }
+
+    img {
+        width: 60%;
+        margin: 0 auto;
+        padding: 2rem 0 2rem 0;
+    }
+}
+
+
+@media screen and (min-width: 100px) {
+    .contents {
+        padding-top: 6rem;
+    }
+}
